@@ -61,6 +61,7 @@
   justify-items: center;
   grid-template-columns: 1fr;
   font-family: 'Inter';
+  font-weight: 410;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   background-image: repeating-linear-gradient(to bottom, rgb(211, 211, 211) 0 2px, rgb(211, 211, 211, 0) 2px 4px), repeating-linear-gradient(to right, rgb(211, 211, 211) 0 2px, rgb(211, 211, 211, 0) 2px 4px), linear-gradient(to bottom, #e7e7e7 0 0.01%, #1a1a1a 0.01% 100%);
@@ -84,7 +85,9 @@
   gap: 20px;
 }
 .header-zag {
-  font-weight: 400;
+  font-family: 'Inter';
+  font-variation-settings: "wght" 715;
+  font-weight: 715;
   font-size: clamp(49px, 7vw, 65px);
 }
 .header-text {
@@ -254,7 +257,6 @@ button.card-button {
   text-transform: uppercase;
 }
 .close {
-  border: none;
   height: 38px;
   background-color: #FFFF;
   border: 2px solid #000000;
@@ -267,7 +269,7 @@ button.card-button {
   display: inline-block;
   color: #ffffff;
   background-color: #ffffff;
-  transition: all 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
   overflow: hidden;
   z-index: 0;
 }
@@ -295,7 +297,7 @@ button.card-button {
 .button-focus.close {
   position: relative;
   color: #FFFF;
-  transition: all 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
   overflow: hidden;
   z-index: 0;
 }
@@ -320,7 +322,7 @@ button.card-button {
   left: 0;
 }
 .button-focus:focus-visible {
-  transition: 0.3s ease;
+  transition: box-shadow 0.3s ease;
   outline: none;
   box-shadow: 2px 2px 0 1px #000000;
 }
